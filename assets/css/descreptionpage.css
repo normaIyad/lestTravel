@@ -11,7 +11,15 @@
     width: 70vw;
     padding: 10px;
 }
-
+.other{
+    display: flex;
+    gap: 10px;
+}
+.other .userimg img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 #otherarticle {
     grid-area: right; 
 }

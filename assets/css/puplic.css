@@ -1,8 +1,9 @@
 @import url(./blogs.css);
 @import url(./langing.css);
 @import url(./descreptionpage.css);
-@import url(./form.css);
+
 @import url(./header&footer.css);
+@import url(./form.css);
 *{
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +17,23 @@ body {
 .container{
     width: 90%;
     margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
 p{
   font-style: italic;

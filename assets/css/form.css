@@ -1,6 +1,13 @@
 .contact{
-    margin-top: 100px;
+    margin: 70px ;
+
 }
+.contact .wrapper{
+    width: 90%;
+    margin:  0 auto;
+    padding: 30px;
+}
+
 .contact h2{
     color: #207980;
     text-align: center;
@@ -50,4 +57,9 @@
     background-color: #ffffff;
     color: #207980;
     border: 1px solid #207980;
+}
+@media (max-width:600px) {
+    .contact{
+        display: none !important;
+    }
 }

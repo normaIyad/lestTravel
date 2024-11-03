@@ -8,10 +8,11 @@
 .langing .wrapper{
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%);
     width: 70%;
     max-width: 1000px;
+    margin-left: 70px;
 }
 .langing h1{
     font-size: 70px;
@@ -43,7 +44,7 @@
     color: #256767;
     border: 2px solid #256767;
 }
-@media(max-width:768px){
+@media(max-width:980px){
  
     .langing .wrapper{
         top: 50%;
@@ -51,7 +52,7 @@
         transform: translate(-15%, -50%);
         width: 90%;
         background-color: rgba(240, 242, 242, 0.5);
-        margin-left: 10px;
+        margin-left: 70px;
     }
     .langing h1{
         font-size: 50px;
