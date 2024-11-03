@@ -1,0 +1,65 @@
+.langing{
+    min-height: 100vh;
+    background-image: url('../imgs/landimg_main.png');
+    background-size: cover;
+    background-position:center;
+    position: relative;
+}
+.langing .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 1000px;
+}
+.langing h1{
+    font-size: 70px;
+    color: #256767;
+    text-align:left;
+    margin-top: 100px;
+    font-weight: 800;
+}
+.langing p{
+    font-size: 20px;
+    color: #777;
+    text-align: left;
+    margin-top: 20px;
+}
+.langing button{
+    font-size: 20px;
+    background-color: #256767;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.langing button:hover{
+    background-color: #fff;
+    color: #256767;
+    border: 2px solid #256767;
+}
+@media(max-width:768px){
+ 
+    .langing .wrapper{
+        top: 50%;
+        left: 100px;
+        transform: translate(-15%, -50%);
+        width: 90%;
+        background-color: rgba(240, 242, 242, 0.5);
+        margin-left: 10px;
+    }
+    .langing h1{
+        font-size: 50px;
+    }
+    .langing p{
+        font-size: 16px;
+    }
+    .langing button{
+        font-size: 16px;
+    }
+}
