@@ -1,4 +1,4 @@
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 70% 35%;
     grid-template-rows: auto auto auto;
@@ -134,4 +134,237 @@ figure{
             "right right"
             "bottom bottom";
     } 
+} */
+.container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "top top"
+        "left right"
+        "bottom bottom";
+    justify-content: center;
+    width: 70vw;
+    padding: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "top"
+            "left"
+            "right"
+            "bottom";
+        width: 90vw;
+    }
+    #otherarticle .wrapper .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "top"
+            "left"
+            "right"
+            "bottom";
+        width: 100vw;
+        padding: 5px;
+    }
+    
+    #titleofarticle h1 {
+        font-size: 48px;
+    }
+    
+    #titleofarticle h3 {
+        font-size: 28px;
+    }
+
+    #bodyofarticle h3 {
+        font-size: 24px;
+    }
+    
+    #bodyofarticle p {
+        font-size: 18px;
+    }
+    
+    .other .userimg img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #otherarticle .wrapper .card img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #titleofarticle h1 {
+        font-size: 36px;
+    }
+
+    #titleofarticle h3 {
+        font-size: 24px;
+    }
+
+    #bodyofarticle h3 {
+        font-size: 20px;
+    }
+
+    #bodyofarticle p {
+        font-size: 16px;
+    }
+    
+    .other .userimg img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    #otherarticle .wrapper .card img {
+        height: 200px;
+    }
+}
+
+/* Flex and Figure Adjustments */
+.other {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    margin:  10px 5px;
+}
+
+.other .userimg img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#otherarticle {
+    grid-area: right; 
+}
+
+#otherarticle .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#otherarticle .wrapper .card {
+    width: 90%;
+    padding: 10px;
+}
+
+#otherarticle .wrapper .card .img {
+    width: 100%;
+    height: auto;
+}
+
+#otherarticle .wrapper .card img {
+    width: 100%;
+    height: auto;
+}
+
+#titleofarticle {
+    grid-area: top;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#titleofarticle h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    color: #47a9bc;
+}
+
+#titleofarticle span {
+    font-size: 18px;
+    color: #777777;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#titleofarticle h3 {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#titleofarticle .mainimg {
+    width: 100%;
+}
+
+#titleofarticle img {
+    width: 100%;
+}
+
+#titleofarticle figcaption {
+    font-size: 12px;
+    color: #777777;
+}
+
+#bodyofarticle {
+    grid-area: left;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+#bodyofarticle h3 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+#bodyofarticle p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-size: 22px;
+    color: #666;
+    text-align: justify;
+}
+
+#bodyofarticle img {
+    width: 100%;
+}
+
+#bodyofarticle figcaption {
+    font-size: 12px;
+    color: #777777;
+    margin-bottom: 20px;
+}
+
+#footer {
+    grid-area: bottom;
+    text-align: center;
+    font-size: 14px;
+    color: #d92626;
+    padding: 20px;
+}
+
+figure {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.figures figure img {
+    width: 100%;
+    height: auto;
 }
